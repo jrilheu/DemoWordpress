@@ -11,13 +11,40 @@
 ?>
 
 		</div><!-- #main -->
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<?php get_sidebar( 'main' ); ?>
-
-			<div class="site-info">
-				<?php do_action( 'twentythirteen_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentythirteen' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentythirteen' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentythirteen' ), 'WordPress' ); ?></a>
-			</div><!-- .site-info -->
+		<footer id="colophon" class="site-footer wrapper" role="contentinfo">
+			<div class="col-md-6 InfoFooter dark-red">
+				<?php iinclude_page(32,'displayTitle=true&titleBefore=<h3>'); ?>
+			</div>
+			<div class="col-md-6 InfoFooter dark-red">
+				<?php iinclude_page(34,'displayTitle=true&titleBefore=<h3>'); ?>
+			</div>
+			<div style="clear:both;width:100%"></div>
+			<div class="enlacesFooter">
+				<h3>Enlaces de Interes</h3>
+				<div style="text-align:center;">
+					<a href="#">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/footerimgs/gob_online.jpg" alt="">
+					</a>
+					<a href="#">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/footerimgs/mpptaa.jpg" alt="">
+					</a>
+					<a href="#">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/footerimgs/bolipuertos.jpg" alt="">
+					</a>
+					<a href="#">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/footerimgs/conferry.jpg" alt="">
+					</a>
+					<a href="#">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/footerimgs/inea.jpg" alt="">
+					</a>
+					<a href="#">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/footerimgs/puertos_alba.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div style="text-align:right;" class="dark-red wrapper">
+				<p class="bottomText">2015 Todos los derechos reservados</p>
+			</div>
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 

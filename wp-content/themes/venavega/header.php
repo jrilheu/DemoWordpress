@@ -27,6 +27,7 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<?php wp_head(); ?>
 </head>
 
@@ -34,21 +35,27 @@
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="top">
-				<img src="wp-content\themes\venavega\images\headers\gob21.jpg" id="left" alt="">
-				<img src="wp-content\themes\venavega\images\headers\banner_right.jpg" id="right" alt="">
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/headers/gob21.jpg" id="left" alt="" />
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/headers/banner_right.jpg" id="right" alt="">
 			</div>
-			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<img src="wp-content\themes\venavega\images\headers\logo.png" alt="Logo">
-			</a>
-
+			<div style="position:relative;text-align: center;">
+				<a id="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/headers/logo.png" alt="Logo" />
+				</a>
+				<div class="ColorsLogo" style="background:#e3e7f2;"></div>
+				<div class="ColorsLogo" style="background:#a8bdd8;"></div>
+			</div>
 			<div id="navbar" class="navbar">
-				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+				<nav id="site-navigation" class="navigation main-navigation dark-red" role="navigation">
 					<button class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></button>
 					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
-					<?php get_search_form(); ?>
+					
 				</nav><!-- #site-navigation -->
+				<div class="line-dark-yellow"></div>
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
-
+		<?php if (is_front_page()) {
+        	echo do_shortcode("[metaslider id=37]"); 
+    	} ?>
 		<div id="main" class="site-main">
