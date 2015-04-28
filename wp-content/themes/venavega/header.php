@@ -27,7 +27,9 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Martel+Sans:200' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
 
@@ -55,7 +57,14 @@
 				<div class="line-dark-yellow"></div>
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
-		<?php if (is_front_page()) {
-        	echo do_shortcode("[metaslider id=37]"); 
-    	} ?>
+		
+		<?php if (is_front_page()) { ?>
+			<div style="position:relative">
+	        	<?php echo do_shortcode("[metaslider id=37]");?>
+	        	<div id="CaptionSlider">
+	        		<p id="mainText">Servicios de Carga Marítimo</p>
+	        		<p>Nacional e Intenacional</p>
+	        	</div> 
+        	</div>
+    	<?php } ?>
 		<div id="main" class="site-main">

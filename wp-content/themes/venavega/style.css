@@ -103,7 +103,7 @@ button,
 input,
 select,
 textarea {
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 body {
@@ -142,7 +142,7 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: Bitter, Georgia, serif;
+	font-family: 'Martel Sans', Georgia, serif;
 	line-height: 1.3;
 }
 
@@ -163,7 +163,7 @@ h3 {
 
 h4 {
 	font-size: 20px;
-	margin: 25px 0;
+	margin: 8px 0;
 }
 
 h5 {
@@ -820,7 +820,28 @@ img.wp-smiley,
  * 4.1 Site Header
  * ----------------------------------------------------------------------------
  */
+#CaptionSlider {
+	background: url(images/headers/MainInfo.png) no-repeat;
+	height: 83px;
+	position: absolute;
+  	top: 12em;
+  	right: 0;
+  	width: 390px;
+  	text-align: right;
+  	padding-right: 45px;
+}
 
+#CaptionSlider p {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 300;
+}
+#CaptionSlider #mainText {
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 24px;
+	color: #a90705;
+	font-weight: 300;
+}
 .site-header {
 	position: relative;
 }
