@@ -64,7 +64,7 @@ msgstr "Twenty Thirteen requiere al menos la versión 3.6 de WordPress. Estás u
 
 #: 404.php:21
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
-msgstr "Esto es algo embarazoso ¿no?"
+msgstr "La página que buscas fue movida del directorio actual o nunca existio"
 
 #: 404.php:22
 msgid "It looks like nothing was found at this location. Maybe try a search?"

@@ -148,7 +148,7 @@ h6 {
 
 h1 {
 	font-size: 48px;
-	margin: 33px 0;
+	margin: 18px 0;
 }
 
 h2 {
@@ -569,7 +569,7 @@ hr {
 button,
 input,
 textarea {
-	border: 2px solid #d4d0ba;
+	border: 2px solid #c7cddf;
 	font-family: inherit;
 	padding: 5px;
 }
@@ -881,7 +881,7 @@ img.wp-smiley,
 }
 
 .site-description {
-	font: 300 italic 24px "Source Sans Pro", Helvetica, sans-serif;
+	font: 300 italic 24px "Open Sans", Helvetica, sans-serif;
 	margin: 0;
 }
 
@@ -894,7 +894,6 @@ img.wp-smiley,
 .main-navigation {
 	clear: both;
 	margin: 0 auto;
-	max-width: 1080px;
 	min-height: 45px;
 	position: relative;
 }
@@ -1074,7 +1073,7 @@ ul.nav-menu .focus > ul,
 }
 
 .entry-header {
-	margin-bottom: 30px;
+	margin-bottom: 5px;
 }
 
 .entry-title {
@@ -1596,7 +1595,7 @@ footer.entry-meta {
 .format-link .entry-title {
 	color: #ca3c08;
 	display: inline;
-	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+	font: 300 italic 20px "Open Sans", Helvetica, sans-serif;
 	margin-right: 20px;
 }
 
@@ -1806,7 +1805,7 @@ footer.entry-meta {
 .attachment .entry-title {
 	display: inline-block;
 	float: left;
-	font: 300 italic 30px "Source Sans Pro", Helvetica, sans-serif;
+	font: 300 italic 30px "Open Sans", Helvetica, sans-serif;
 	margin: 0;
 }
 
@@ -2060,7 +2059,7 @@ footer.entry-meta {
 
 .author-description .author-title {
 	clear: none;
-	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+	font: 300 italic 20px "Open Sans", Helvetica, sans-serif;
 	margin: 0 0 8px;
 }
 
@@ -2085,7 +2084,7 @@ footer.entry-meta {
 
 .archive-title,
 .archive-meta {
-	font: 300 italic 30px "Source Sans Pro", Helvetica, sans-serif;
+	font: 300 italic 30px "Open Sans", Helvetica, sans-serif;
 	margin: 0 auto;
 	max-width: 1040px;
 	padding: 30px 0;
@@ -2111,11 +2110,11 @@ footer.entry-meta {
  */
 
 .page-header {
-	background-color: #e8e5ce;
+	background-color: #e3e7f2;
 }
 
 .page-title {
-	font: 300 italic 30px "Source Sans Pro", Helvetica, sans-serif;
+	font: 300 italic 30px "Open Sans", Helvetica, sans-serif;
 	margin: 0 auto;
 	max-width: 1040px;
 	padding: 30px 0;
@@ -2155,7 +2154,7 @@ footer.entry-meta {
 }
 
 .error404 .page-title:before {
-	color: #e8e5ce;
+	color: #a8bdd8;
 	content: "\f423";
 	font-size: 964px;
 	line-height: 0.6;
@@ -2166,7 +2165,7 @@ footer.entry-meta {
 }
 
 .error404 .page-wrapper {
-	background-color: #e8e5ce;
+	background-color: #e3e7f2;
 }
 
 .error404 .page-header,
@@ -2208,7 +2207,7 @@ footer.entry-meta {
 }
 
 .comments-title {
-	font: 300 italic 28px "Source Sans Pro", Helvetica, sans-serif;
+	font: 300 italic 28px "Open Sans", Helvetica, sans-serif;
 }
 
 .comment-list,
@@ -2349,7 +2348,7 @@ footer.entry-meta {
 }
 
 .comment-reply-title {
-	font: 300 italic 28px "Source Sans Pro", Helvetica, sans-serif;
+	font: 300 italic 28px "Open Sans", Helvetica, sans-serif;
 }
 
 .comment-reply-title small a {
@@ -2510,7 +2509,7 @@ footer.entry-meta {
 }
 
 .widget .widget-title {
-	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+	font: 300 italic 20px "Open Sans", Helvetica, sans-serif;
 	margin: 0 0 10px;
 }
 
@@ -2710,7 +2709,7 @@ footer.entry-meta {
 	}
 
 	.error404 .page-title {
-		font-size: 24px;
+		font-size: 17px;
 		padding: 180px;
 	}
 
@@ -2890,7 +2889,7 @@ footer.entry-meta {
 	.menu-toggle {
 		cursor: pointer;
 		display: inline-block;
-		font: bold 16px/1.3 "Source Sans Pro", Helvetica, sans-serif;
+		font: bold 16px/1.3 "Open Sans", Helvetica, sans-serif;
 		margin: 0;
 	}
 

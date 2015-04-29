@@ -5879,7 +5879,7 @@ msgstr "<strong>ERROR</strong>: El campo Nombre de usuario está vacío."
 msgid "<strong>ERROR</strong>: The password field is empty."
 msgstr "<strong>ERROR</strong>: El campo contraseña está vacío."
 
-#: wp-includes/wp-db.php:2835
+#: wp-includes/wp-db.php:2949
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>ERROR</strong>: WordPress %1$s necesita MySQL %2$s o superior."
 
