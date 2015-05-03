@@ -1,0 +1,52 @@
+from header.php
+<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+<?php get_search_form(); ?>
+
+from footer.php
+<?php get_sidebar( 'main' ); ?>
+<div class="site-info">
+<?php do_action( 'twentythirteen_credits' ); ?>
+	<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentythirteen' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentythirteen' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentythirteen' ), 'WordPress' ); ?></a>
+</div><!-- .site-info -->
+	
+	<?php iinclude_page(32); ?>
+
+from front-page.php
+	<?php
+	if ( 'posts' == get_option( 'show_on_front' ) ) {
+	    include( get_home_template() );
+	} else {
+	    // Custom content markup goes here
+	    $latest_blog_posts = new WP_Query( array( 'posts_per_page' => 3 ) );
+		if ( $latest_blog_posts->have_posts() ) : while ( $latest_blog_posts->have_posts() ) : $latest_blog_posts->the_post();
+	    // Loop output goes here ?>
+	    	<div>
+		    	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+		    	<div class="entry">
+		 			<?php the_content(); ?>
+		 		</div>
+	 		</div>
+		<?php endwhile; endif; ?>
+	}
+?>
+
+----------------------------------------------------------------------------------------
+PROYECTO Venavega
+- Colocar Logo alineado a la izquierda, disminuir su tamaño, quitar fondo bicolor.
+- Cambiar color del menu principal a Azul, cambiar color del footer.
+- Usar la fuente Martel para el menu.
+- Colocar imagenes en el slider correspondientes al portal.
+- Destacar una noticia por encima de las demas? Ultimas noticias con la ultima en mayor tamaño?
+- Reducir tamaño del twitter, por lo minimo a la mitad.
+- Quitar la palabra de Enlaces de Interés.
+- Quitar lineas de los titulos de Contáctenos y Acerca de Nosotros del Footer.
+- Agregar Redes sociales.
+- El espacio franco dejado debajo de twitter colocar videos de youtube.
+
+------------------------------------------------------------
+PROYECTO Psicoanalistas
+estamos hablando de 6h de trabajo a 465bs/h para un total de 2790bs podemos redondear ese nro a 2800 o 2750. eso ahi que acklarar que es hora de desarrollo de ocntenido en el portal sin necesidad de tocar el codigo de la pagina. si esta de acuerdo entrguenos las credenciales de accso al area administrativa y nosotros empezaremos nuestro  trabajo.
+
+Tambien es necesario que nos pase todos los contenidos a cargar.
+
