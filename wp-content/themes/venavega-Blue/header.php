@@ -36,7 +36,7 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
-			<div class="top" style="background:#e3e7f2;">
+			<div class="top" style="background:#fff;">
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/headers/gob21.jpg" id="left" alt="" />
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/headers/banner_right.jpg" id="right" alt="">
 			</div>
