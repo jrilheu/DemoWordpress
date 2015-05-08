@@ -11,7 +11,7 @@
 ?>
 
 		</div><!-- #main -->
-		<footer id="colophon" class="site-footer wrapper" role="contentinfo">
+		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="col-md-6 InfoFooter dark-blue">
 				<?php iinclude_page(32,'displayTitle=true&titleBefore=<h3>'); ?>
 			</div>
@@ -41,7 +41,7 @@
 					</a>
 				</div>
 			</div>
-			<div style="text-align:right;" class="dark-blue wrapper">
+			<div style="text-align:right;" class="dark-blue">
 				<p class="bottomText">2015 Todos los derechos reservados</p>
 			</div>
 		</footer><!-- #colophon -->

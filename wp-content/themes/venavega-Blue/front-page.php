@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying the Front Page
+ *
+ * @package WordPress
+ * @subpackage Venavega
+ * 
+ */
+get_header(); ?>
 <div class="latest-posts col-md-8">
 	<h3>Noticias Recientes</h3>
 	 <?php $latest_blog_posts = new WP_Query( array( 'posts_per_page' => 4 ) );
@@ -14,9 +22,11 @@
 		<?php endwhile; endif; ?>
 </div>
 <div class="twitter col-md-4">
-	<iframe width="" height="200"  style="margin-bottom:10px;" src="https://www.youtube.com/embed/Px1pJGw2ykM" frameborder="0" allowfullscreen></iframe>
+	<div id="videoWrapper">
+		<iframe width="560" height="349" style="margin-bottom:10px;" src="https://www.youtube.com/embed/Px1pJGw2ykM" frameborder="0" allowfullscreen></iframe>
+	</div>
 	<a class="twitter-timeline" height="400" href="https://twitter.com/VENAVEGAGOB" data-widget-id="591448330636546049">Tweets por el @VENAVEGAGOB.</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 </div>
 <?php get_footer(); ?>

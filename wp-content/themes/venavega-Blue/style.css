@@ -43,6 +43,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 7.0 - Footer
  * 8.0 - Media Queries
  * 9.0 - Print
+ * 10.0- Front-Page
  * ----------------------------------------------------------------------------
  */
 
@@ -246,10 +247,13 @@ q:after {
 }
 
 blockquote {
+	border-left: none;
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 300;
-	margin: 24px 40px;
+	margin: 0;
+	padding: 0;
+    
 }
 
 blockquote blockquote {
@@ -823,10 +827,10 @@ img.wp-smiley,
  * ----------------------------------------------------------------------------
  */
 #CaptionSlider {
-	background: url(images/headers/MainInfo.png) no-repeat;
+	background: url(images/headers/maininfo.png) no-repeat;
+	bottom: 65px;
 	height: 83px;
 	position: absolute;
-  	top: 12em;
   	right: 0;
   	width: 390px;
   	text-align: right;
@@ -3251,3 +3255,22 @@ footer.entry-meta {
 		color: #333;
 	}
 }
+/**
+ * 10.0 Front-Page
+ * ----------------------------------------------------------------------------
+ */
+#videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 25px;
+}
+#videoWrapper iframe { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.latest-posts img { width: 100%; }
