@@ -16,8 +16,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<div id="primary" class="container" role="main">
+		<h1>Noticias</h1>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* The loop */ ?>
@@ -31,7 +31,6 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
 
-		</div><!-- #content -->
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>

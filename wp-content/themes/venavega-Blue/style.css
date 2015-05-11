@@ -1061,7 +1061,7 @@ ul.nav-menu .focus > ul,
 .sidebar .entry-summary,
 .sidebar .entry-meta {
 	max-width: 1040px;
-	padding: 0 376px 0 60px;
+	padding-right: 327px;
 }
 
 
@@ -1084,8 +1084,10 @@ ul.nav-menu .focus > ul,
 }
 
 .entry-title {
+	font-size: 25px;
 	font-weight: normal;
-	margin: 0 0 5px;
+	margin: 0px;
+  	padding: 0;
 }
 
 .entry-title a {
@@ -1435,6 +1437,8 @@ footer.entry-meta {
  * 5.5 Post Formats
  * ----------------------------------------------------------------------------
  */
+/*Articles*/
+article.post { margin-bottom: 15px; }
 
 /* Aside */
 .format-aside {
@@ -2504,7 +2508,8 @@ footer.entry-meta {
  */
 
 .widget {
-	background-color: rgba(247, 245, 231, 0.7);
+	background-color: #7B86DD;
+	background-color: rgba(123, 134, 221,0.4);
 	font-size: 14px;
 	-webkit-hyphens: auto;
 	-moz-hyphens:    auto;
@@ -2516,7 +2521,7 @@ footer.entry-meta {
 }
 
 .widget .widget-title {
-	font: 300 italic 20px "Open Sans", Helvetica, sans-serif;
+	font: 400 italic 20px "Open Sans", Helvetica, sans-serif;
 	margin: 0 0 10px;
 }
 
@@ -2541,7 +2546,7 @@ footer.entry-meta {
 }
 
 .widget a {
-	color: #bc360a;
+	color: #000;
 }
 
 .widget a:hover {
@@ -2734,7 +2739,8 @@ footer.entry-meta {
 	}
 
 	.site-main .widget-area {
-		margin-right: 60px;
+		margin-right: 35px;
+		margin-top: 55px;
 	}
 }
 
