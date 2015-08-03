@@ -12,13 +12,17 @@
 
 		</div><!-- #main -->
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="col-md-6 InfoFooter dark-blue">
+		    <div class="dark-blue container-darkblue">
+			<div class="container-front-page"> 
+			<div id="left" class="col-md-6 InfoFooter dark-blue">
 				<?php iinclude_page(32,'displayTitle=true&titleBefore=<h3>'); ?>
 			</div>
-			<div class="col-md-6 InfoFooter dark-blue">
+			<div id="right" class="col-md-6 InfoFooter dark-blue">
 				<?php iinclude_page(34,'displayTitle=true&titleBefore=<h3>'); ?>
 			</div>
 			<div style="clear:both;width:100%"></div>
+			</div>
+		    </div>
 			<div class="enlacesFooter">
 				<div style="text-align:center;">
 					<a href="#">
@@ -41,7 +45,7 @@
 					</a>
 				</div>
 			</div>
-			<div style="text-align:right;" class="dark-blue">
+			<div style="text-align:center;" class="dark-blue">
 				<p class="bottomText">2015 Todos los derechos reservados</p>
 			</div>
 		</footer><!-- #colophon -->
